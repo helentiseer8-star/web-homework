@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>إنشاء حساب جديد</title>
+</head>
+<body>
+
+    <h2>إنشاء حساب جديد</h2>
+
+    <form action="login.html" method="POST">
+        <!-- حقل الاسم الكامل -->
+        <div>
+            <label for="fullname">الاسم الكامل:</label><br>
+            <input type="text" id="fullname" name="fullname" required placeholder="أدخل اسمك الكامل">
+        </div>
+        <br>
+
+        <!-- حقل البريد الإلكتروني -->
+        <div>
+            <label for="email">البريد الإلكتروني:</label><br>
+            <input type="email" id="email" name="email" required placeholder="example@mail.com">
+        </div>
+        <br>
+
+        <!-- حقل الجنس باستخدام Radio Buttons -->
+        <div>
+            <label>الجنس:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">ذكر</label>
+            
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">أنثى</label>
+        </div>
+        <br>
+
+        <!-- قائمة منسدلة لاختيار الدولة -->
+        <div>
+            <label for="country">الدولة:</label><br>
+            <select id="country" name="country" required>
+                <option value="">-- اختر الدولة --</option>
+                <option value="palestine">فلسطين</option>
+                <option value="jordan">الأردن</option>
+                <option value="egypt">مصر</option>
+                <option value="saudi">السعودية</option>
+                <option value="other">دولة أخرى</option>
+            </select>
+        </div>
+        <br>
+
+        <!-- صندوق اختيار للموافقة على الشروط -->
+        <div>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">أوافق على الشروط والأحكام</label>
+        </div>
+        <br>
+
+        <!-- زر التسجيل -->
+        <div>
+            <button type="submit">تسجيل (Register)</button>
+        </div>
+    </form>
+
+    <br>
+    <hr>
+    <!-- رابط للعودة لصفحة الدخول -->
+    <p>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+
+</body>
+</html>
